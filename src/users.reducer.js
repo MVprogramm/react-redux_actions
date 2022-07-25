@@ -12,7 +12,7 @@ export const userReducer = (state = initialState, action) => {
       };
     case DELETE:
       return {
-        userList: state.usersList.filter(user => user.id !== action.payload),
+        usersList: state.usersList.filter(user => user.id !== action.payload),
       };
     default:
       return state;
